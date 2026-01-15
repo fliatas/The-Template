@@ -32,7 +32,7 @@ class Metamask(Wallet):
     def create_wallet(self, save_in_excel: bool = False) -> tuple[str, str, str]:
         """
         Создает кошелек в metamask, возвращает адрес кошелька, seed фразу и пароль в виде кортежа.
-        :param save_in_excel: если True, то адрес, seed и пароль будут записаны в excel файл account.xlsx
+        :param save_in_excel: если True, то адрес, seed и пароль будут записаны в excel файл accounts.xlsx
         :return: tuple (address, seed, password)
         """
         self.open_wallet()
